@@ -1,0 +1,8 @@
+{
+  "coarse_points": 401,
+  "fine_points": 801,
+  "maximum_absolute_mean_difference": 1.9984014443252818e-15,
+  "loglikelihood_difference": 6.195932655828074e-12,
+  "coarse_boundary_mass": 1.0005546551469177e-24,
+  "fine_boundary_mass": 3.630669360129192e-25
+}

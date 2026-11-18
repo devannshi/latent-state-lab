@@ -1,0 +1,130 @@
+{
+  "started_at_utc": "2026-11-18T04:49:19.932424+00:00",
+  "finished_at_utc": "2026-11-18T04:50:41.715176+00:00",
+  "elapsed_seconds": 81.78378774999874,
+  "phase_seconds": {
+    "core": 32.9366920000175,
+    "convergence": 13.983162124990486,
+    "stress": 8.615196625003591,
+    "holdout": 15.224794125009794,
+    "nonlinear": 2.9930987499828916,
+    "bootstrap": 7.965766709006857,
+    "example": 0.05318408299353905
+  },
+  "config": {
+    "profile": "full",
+    "seed": 20261117,
+    "trials": 1000,
+    "length": 160,
+    "particles": 256,
+    "convergence_trials": 60,
+    "particle_counts": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "stress_trials": 100,
+    "holdout_trials": 100,
+    "train_length": 240,
+    "test_length": 160,
+    "sv_trials": 60,
+    "sv_particles": 2048,
+    "grid_size": 401,
+    "bootstrap_replications": 200,
+    "workers": 2
+  },
+  "truth": {
+    "phi": 0.85,
+    "q": 0.16,
+    "r": 0.49,
+    "alpha": 1.0
+  },
+  "stochastic_volatility_truth": {
+    "mu": -1.0,
+    "phi": 0.95,
+    "q": 0.08
+  },
+  "seed_scheme": "SeedSequence([master_seed, study_id, trial_id, component_id]).generate_state(1, uint64)",
+  "study_ids": {
+    "core": 1,
+    "convergence": 2,
+    "matched_stress": 3,
+    "missing_random": 4,
+    "missing_block": 5,
+    "contamination": 6,
+    "holdout": 7,
+    "stochastic_volatility": 8,
+    "bootstrap": 9,
+    "example": 10
+  },
+  "python": "3.12.6",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "dependencies": {
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "pandas": "3.1.1",
+    "matplotlib": "3.11.2"
+  },
+  "git_commit_at_execution": null,
+  "source_sha256": {
+    "src/latent_state_lab/__init__.py": "5792a02367d4a0c734d801d2fe3ceb2484eab4fd6e5770eb674fbe180f08720b",
+    "src/latent_state_lab/cli.py": "35c0152c84dddab277e745db3e016667479c76e6187843a520317d791e267a3f",
+    "src/latent_state_lab/estimation.py": "f4dbc95b0956f26f05481883bb4ff2a629d2e320d0be9076ab4bb48a848acfd9",
+    "src/latent_state_lab/experiments.py": "f6874f9dae189c00b6dd465a90ca53dabadf4af27085b798e93b1caab6e82ed0",
+    "src/latent_state_lab/kalman.py": "2a8c71d021a8a3b976042c3ea0e1189389626a09103e6e92a94d64d40c6d22f2",
+    "src/latent_state_lab/metrics.py": "a4847c2f878a340d0f8698571a4f268e823a4ba016a2978cf93370f9dfd3684f",
+    "src/latent_state_lab/model.py": "6efe7b05e02313fe79a1c8911eb3c6d2df92ced7357055c6457150782e6e51eb",
+    "src/latent_state_lab/particle.py": "7f4f7792d560b1938f57d85801aad491f625b9fcc4f88ca790deca42addc4c17",
+    "src/latent_state_lab/plotting.py": "90a955f6e023f1db7884099551ad47c5f481122a0222658b628477d28d21c5e2",
+    "src/latent_state_lab/reporting.py": "c22eec715fdde5c57a9189ba53bba9240eca57433a7874b33618aa171f857ca5",
+    "src/latent_state_lab/stochastic_volatility.py": "8d6894a77f7e3e09cf1e3bc84f9b5f79eaa7fb9246d4d1b8db58281c560aa486"
+  },
+  "result_sha256": {
+    "bootstrap_refits.csv": "eff0a7436ed43e67f33abd68c29296cd4a6bd9580fc9a38eaa03552ad23e6821",
+    "bootstrap_summary.json": "115dab90c6519c02fe3a523a4c3a700f04e6301bfce3b6c27aad84ba76007d58",
+    "convergence_trials.csv": "24c635e7d52914d2b8d59139a63deb0e09f6402aaa2793e35f2511e6c311c83d",
+    "example_path.csv": "3448b6f5f10a077a925b4a3e8f120872a32a2eff170921e5fcf73e63ac26aeb8",
+    "holdout_summary.csv": "7099308c489425bb6ceaedffd635496076c1e34466b3fb562867a09346046e01",
+    "holdout_trials.csv": "edc129b344391739c756df60fcc92ad4a7e74a3c486b469c47008c8764f1e410",
+    "identifiability_ridge.csv": "f96e90c0876cc1c18f49bb3631d4d7d9c172a65b1f75e7056beca13251830049",
+    "optimizer_diagnostics.jsonl": "d8d76ba62d87bda5fd66c6b8acbe4e22ef90fd14a5971ecb0cb8d50621508896",
+    "paired_risk_differences.csv": "305adbdd0838e704c48dc294b5c9563e7ea5689b49ceec01f186bbd4c6236ee2",
+    "parameter_summary.csv": "45325575e77a59c0c6c574227b3609bd45b3cdaa128828b540c483868b9fd575",
+    "parameter_trials.csv": "fe7e69f3ec37db7f82b65aac9eb2eaf60308a7107533fa3b497c60d0a769b729",
+    "particle_diagnostics.csv": "78e201f995533299e3faab861ee11c6da4ef061c2d734fd8313ecd15323952e8",
+    "state_summary.csv": "a4385f61941c2067a2caea73481a0c2ab4c5b2bfd16e5d892af022c9dc0ff958",
+    "state_trials.csv": "99bcefe8e0289c9dd302c75b373715aa93154ff577fce23689d802dcd4e9dcb4",
+    "stress_summary.csv": "28c37f2e12c6938f4b688db387da93b23a414a754f079c7c635c509cb663dc58",
+    "stress_trials.csv": "de0dbe431fe4c7c44e2a52f6c8404b64808fff1b395385a2409c2b7faa281815",
+    "sv_example.csv": "4b975370aba98e56a356c56186d8c2e02a26a591dee8c32b875204f61626360d",
+    "sv_grid_check.json": "9fe82c7afceb71d1a684fc4cae8fc2565dfea3b4fe83a7bebcd51f3fe8dfdefe",
+    "sv_summary.csv": "7bd36e6608ec0ef769ae3e6794f5e61c5bf4098ed8291e2d0aa4e23d1c08f228",
+    "sv_trials.csv": "863692ef67a8ce640fe2df6532e33a0b1d3e4fe1f496391d3d9410b29cfaef9c"
+  },
+  "timing_note": "Per-method wall-clock timings are machine-specific; estimation time is included for fitted methods.",
+  "source_sha256_at_execution": {
+    "src/latent_state_lab/__init__.py": "5792a02367d4a0c734d801d2fe3ceb2484eab4fd6e5770eb674fbe180f08720b",
+    "src/latent_state_lab/cli.py": "35c0152c84dddab277e745db3e016667479c76e6187843a520317d791e267a3f",
+    "src/latent_state_lab/estimation.py": "f4dbc95b0956f26f05481883bb4ff2a629d2e320d0be9076ab4bb48a848acfd9",
+    "src/latent_state_lab/experiments.py": "f6874f9dae189c00b6dd465a90ca53dabadf4af27085b798e93b1caab6e82ed0",
+    "src/latent_state_lab/kalman.py": "2a8c71d021a8a3b976042c3ea0e1189389626a09103e6e92a94d64d40c6d22f2",
+    "src/latent_state_lab/metrics.py": "a4847c2f878a340d0f8698571a4f268e823a4ba016a2978cf93370f9dfd3684f",
+    "src/latent_state_lab/model.py": "6efe7b05e02313fe79a1c8911eb3c6d2df92ced7357055c6457150782e6e51eb",
+    "src/latent_state_lab/particle.py": "7f4f7792d560b1938f57d85801aad491f625b9fcc4f88ca790deca42addc4c17",
+    "src/latent_state_lab/plotting.py": "90a955f6e023f1db7884099551ad47c5f481122a0222658b628477d28d21c5e2",
+    "src/latent_state_lab/reporting.py": "8c820a419a5c883a50b27303ef731e4b6aa02e92ea6019996bcaea8ee63b9aff",
+    "src/latent_state_lab/stochastic_volatility.py": "8d6894a77f7e3e09cf1e3bc84f9b5f79eaa7fb9246d4d1b8db58281c560aa486"
+  },
+  "presentation_revision": {
+    "date": "2026-11-18",
+    "scope": "Report title and explanatory prose only; numerical source, retained trials, summaries and figures unchanged.",
+    "source_hash_note": "source_sha256 is the current source snapshot; source_sha256_at_execution preserves the original experiment snapshot.",
+    "changed_source_files": [
+      "src/latent_state_lab/reporting.py"
+    ]
+  }
+}

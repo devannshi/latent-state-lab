@@ -1,0 +1,6 @@
+# Numerical runtime versions recorded in results/full/manifest.json (Python 3.12.6).
+# Development/test tools are installed by the optional [dev] extra.
+numpy==2.5.5
+scipy==1.18.1
+pandas==3.1.1
+matplotlib==3.11.2
